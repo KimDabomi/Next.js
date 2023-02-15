@@ -1,10 +1,13 @@
-import '@/styles/globals.css'
+import '@/styles/globals.css';
+
+// next.js에서 redux사용을 위한 추가 (1)
+import wrapper from '@/store';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 // _document.js <body> 안에 들어가는 <Main /> 영역
-export default function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   return (
     <>
       <Header />
@@ -15,4 +18,7 @@ export default function App({ Component, pageProps }) {
       <Footer />
     </>
   );
-}
+};
+
+// next.js에서 redux사용을 위한 추가 (2)
+export default wrapper.withRedux(App);

@@ -49,6 +49,7 @@ const Header = () => {
                 <MenuLink href='/portfolio/frontend'>프론트엔드</MenuLink>
                 <MenuLink href='/portfolio/backend'>백엔드</MenuLink>
                 <MenuLink href='/jquery/main'>jQuery 사용</MenuLink>
+                <MenuLink href='/redux/movieRank'>MovieRank</MenuLink>
             </nav>
         </div>
     )
